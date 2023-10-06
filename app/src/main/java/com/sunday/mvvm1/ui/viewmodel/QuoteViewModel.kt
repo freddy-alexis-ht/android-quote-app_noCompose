@@ -43,4 +43,8 @@ class QuoteViewModel @Inject constructor(
             _isLoading.postValue(false)
         }
     }
+
+    fun setQuote(quote: Quote) {
+        this._quote.value = quote
+    }
 }
